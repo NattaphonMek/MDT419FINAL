@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 200px auto;
+    width: 500px;
+    height: 658px;
+    background: rgb(39, 73, 112);
+}
+
+
+/*กรอบ*/
+
+.RegisterForm {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 900px;
+    height: 850px;
+    margin-top: -160px;
+    margin-left: -190px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.RegisterForm h1 {
+    font-size: 40px;
+    font-family: 'kanit', sans-serif;
+    background-color: #f57b39;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: -20px;
+}
+
+.RegisterForm .name {
+    margin-top: 30px;
+    display: flex;
+    padding-left: 120px;
+    align-items: center;
+}
+
+.name input {
+    font-family: 'kanit', sans-serif;
+    padding-left: 100px;
+    outline: none;
+    font-size: 10px;
+    height: 50px;
+    width: 250px;
+    margin-left: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(180, 177, 177);
+}
+
+.name h2 {
+    font-family: 'kanit', sans-serif;
+    color: #f57b39;
+}
+
+.birthday {
+    color: #f57b39;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    font-family: 'kanit', sans-serif;
+}
+
+.birthday #birthday {
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'kanit', sans-serif;
+}
+
+.email {
+    color: #f57b39;
+    padding-left: 120px;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.email input {
+    font-family: 'kanit', sans-serif;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+    height: 50px;
+    width: 350px;
+    margin-left: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+}
+
+.email input:hover {
+    border: 3px solid lightskyblue;
+    transition: 0.7s;
+}
+
+.username {
+    color: #f57b39;
+    display: flex;
+    align-items: center;
+    font-family: 'kanit', sans-serif;
+    padding-left: 120px;
+}
+
+.username input {
+    font-family: 'kanit', sans-serif;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+}
+
+.password1 {
+    color: #f57b39;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    font-family: 'kanit', sans-serif;
+    padding-left: 120px;
+}
+
+.password1 input {
+    font-family: 'kanit', sans-serif;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+}
+
+.password2 {
+    color: #f57b39;
+    display: flex;
+    align-items: center;
+    font-family: 'kanit', sans-serif;
+    padding-left: 120px;
+}
+
+.password2 input {
+    font-family: 'kanit', sans-serif;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(112, 112, 112);
+}
+
+
+/*ปุ่มล่างสุด*/
+
+#Regis {
+    margin-top: 120px;
+    margin-left: 280px;
+    left: 500px;
+    bottom: 50px;
+    background: #f57b39;
+    color: white;
+    font-family: 'kanit', sans-serif;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+#Regis:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    background: rgb(11, 84, 133);
+}
+
+#Reset {
+    margin-left: 40px;
+    bottom: 100px;
+    background: #f57b39;
+    color: white;
+    font-family: 'kanit', sans-serif;
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    border: none;
+    font-size: 20px;
+}
+
+#Reset:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    background: rgb(11, 84, 133);
+}
+
+
+/*ปุ่มกดกลับ*/
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 50%;
+    padding: auto;
+    color: #ffffff;
+}
+
+.back-button:hover {
+    transition: 0.6s;
+    background-color: #f57b39;
+    cursor: pointer;
+}

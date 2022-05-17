@@ -1,0 +1,20 @@
+{
+    "name": "app",
+    "version": "0.1.0",
+    "engines": {
+        "node": "18.x"
+    },
+    "private": true,
+    "scripts": {
+        "dev": "nodemon app.js",
+        "server": "node app.js"
+    },
+    "dependencies": {
+        "body-parser": "latest",
+        "cors": "latest",
+        "express": "latest",
+        "mysql": "^2.18.1",
+        "nodemon": "latest",
+        "pg": "latest"
+    }
+}

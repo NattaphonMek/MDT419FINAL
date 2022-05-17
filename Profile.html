@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Profile</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js"></script>
+
+    <script>
+        const user = JSON.parse(localStorage.getItem("user"))
+        if (!user) location.replace('index.html')
+        getPost()
+            //console.log(data)
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <div class="logo">
+                    <a href="#" onclick="ToIndexpage();">
+                        <h1>TEO Community</h1>
+                    </a>
+                </div>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+
+        <!--------Settings-menu ----->
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p id="fullname">USERNAME</p>
+                        <script>
+                            document.getElementById("fullname").innerText = user.firstname + ' ' + user.lastname;
+                        </script>
+                        <a href="#" onclick="ToMyProfile();">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png"
+                            width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png"
+                            width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png"
+                            width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#" onclick="logout();">Logout<img src="images/arrow.png"
+                width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-----profile page------>
+    <div class="profile-container">
+        <img src="images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile.png" class="pd-images">
+                    <div>
+                        <p id="fullname1">USERNAME</p>
+                        <script>
+                            document.getElementById("fullname1").innerText = user.firstname + ' ' + user.lastname;
+                        </script>
+                        </p>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="images/member-1.png">
+                        <img src="images/member-2.png">
+                        <img src="images/member-3.png">
+                        <img src="images/member-4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png">Friend</button>
+                <button type="button"><img src ="images/message.png">Message</button>
+                <br>
+                <a href=""><img src="images/more.png"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Bio Test <img src="images/feeling.png"></p>
+                    <hr>
+                    <ul>
+                        <li> <img src="images/profile-job.png"> Web Dev at KMUTT</li>
+                        <li> <img src="images/profile-study.png"> Study at KMUTT</li>
+                        <li> <img src="images/profile-home.png"> Live in Bangkok, Thailand</li>
+                        <li> <img src="images/profile-location.png"> From Bangkok, Thailand</li>
+                    </ul>
+                </div>
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="">All Photos</a>
+                    </div>
+
+                    <div class="photo-box">
+                        <div><img src="images/photo1.png"></div>
+                        <div><img src="images/photo2.png"></div>
+                        <div><img src="images/photo3.png"></div>
+                        <div><img src="images/photo4.png"></div>
+                        <div><img src="images/photo5.png"></div>
+                        <div><img src="images/photo6.png"></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>120 (20 mutual)</p>
+                    <div class="friends-box">
+                        <div><img src="images/member-1.png">
+                            <p>Meow Meow</p>
+                        </div>
+                        <div><img src="images/member-2.png">
+                            <p>ChiChi </p>
+                        </div>
+                        <div><img src="images/member-3.png">
+                            <p>Kiroaw</p>
+                        </div>
+                        <div><img src="images/member-4.png">
+                            <p>Unpun</p>
+                        </div>
+                        <div><img src="images/member-5.png">
+                            <p>Keow </p>
+                        </div>
+                        <div><img src="images/member-6.png">
+                            <p>Michael </p>
+                        </div>
+                        <div><img src="images/member-7.png">
+                            <p>Samon </p>
+                        </div>
+                        <div><img src="images/member-8.png">
+                            <p>KiKi</p>
+                        </div>
+                        <div><img src="images/member-9.png">
+                            <p>Brayon</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p id="fullname2">USERNAME</p>
+                            <script>
+                                document.getElementById("fullname2").innerText = user.firstname + ' ' + user.lastname;
+                            </script>
+                            <small>Public </small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind?" id="content" type="content" name="content"></textarea>
+
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png"> Live Video</a>
+                            <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+                            <a href="#" id="post" onclick="submitPost();">Post</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="all-post"></div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>- TEO Community 2022 - </p>
+        </div>
+
+</body>
+
+</html>
